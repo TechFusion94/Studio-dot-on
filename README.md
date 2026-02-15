@@ -1,1 +1,1 @@
-# Studio-dot-on
+# Studio dot•on
