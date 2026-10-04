@@ -1,0 +1,197 @@
+/* ========================================
+   HOME (INDEX.HTML) STYLES
+   ======================================== */
+
+/* Content Section */
+.section {
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+  padding: var(--space-2xl) 0;
+  gap: var(--space-lg);
+  width: 100%;
+  min-height: 50vh;
+}
+
+.content-section {
+  width: 50%;
+  border-radius: var(--radius-md);
+  border: var(--border-md) solid #000;
+  background: linear-gradient(0deg, rgba(14, 30, 43, 0.60) 0%, rgba(14, 30, 43, 0.60) 100%), var(--color-navy);
+  padding: var(--space-xl) var(--space-sm);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.content-section h2 {
+  font-family: var(--font-heading);
+  text-align: left;
+  font-size: var(--text-xl);
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  margin-bottom: var(--space-md);
+}
+
+.content-section p {
+  font-family: var(--font-body);
+  font-size: var(--text-lg);
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  margin-bottom: var(--space-xl);
+}
+
+.content-section li {
+  list-style: none;
+  display: flex;
+  width: 20rem;
+  height: 5rem;
+  align-items: center;
+}
+
+/* CTA Button Styling */
+.content-section li a {
+  font-family: var(--font-heading);
+  text-decoration: none;
+  color: white;
+  font-weight: 700;
+  text-transform: uppercase;
+  border-radius: var(--radius-md);
+  border: var(--border-lg) solid #000;
+  padding: var(--space-sm);
+  background-color: var(--color-bordeaux);
+  display: block;
+  text-align: center;
+  transition: all 0.3s ease;
+  white-space: nowrap;
+}
+
+/* CTA Button Hover Effect */
+.content-section li a:hover {
+  background-color: var(--color-blue-grey);
+  transform: translateY(-0.125rem);
+  box-shadow: 0 0.3125rem 0.625rem rgba(0, 0, 0, 0.3);
+}
+
+/* Preview Section */
+.preview-section {
+  flex: 1;
+  width: 50%;
+  border-radius: var(--radius-md);
+  border: var(--border-md) solid #000;
+  background: linear-gradient(0deg, rgba(14, 30, 43, 0.60) 0%, rgba(14, 30, 43, 0.60) 100%), var(--color-navy);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: var(--space-lg);
+  overflow: hidden;
+}
+
+/* Transparent laptop mockup: shown in full, never cropped */
+.preview-section picture {
+  display: block;
+  width: 100%;
+}
+
+.preview-section img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+/* ========================================
+   HOME (INDEX.HTML) RESPONSIVE STYLES
+   ======================================== */
+
+@media (max-width: 768px) {
+
+  /* Content Section Mobile Styles */
+  .section {
+    flex-direction: column;
+    gap: var(--space-md);
+    padding: var(--space-lg) 0;
+  }
+
+  .content-section {
+    width: 100%;
+    padding: var(--space-lg) var(--space-md);
+  }
+
+  .content-section h1 {
+    font-size: var(--text-lg);
+    margin-bottom: var(--space-lg);
+  }
+
+  .content-section p {
+    font-size: var(--text-sm);
+    margin-bottom: var(--space-lg);
+  }
+
+  .content-section li {
+    width: 100%;
+    max-width: 22rem;
+    height: 4rem;
+  }
+
+  .content-section li a {
+    font-size: var(--text-sm);
+    padding: var(--space-sm);
+  }
+
+  .preview-section {
+    width: 100%;
+    padding: var(--space-md);
+  }
+
+  /* Medium Mobile Devices */
+  @media (max-width: 600px) {
+    .content-section li {
+      max-width: 18rem;
+    }
+
+    .content-section li a {
+      font-size: var(--text-xs);
+      padding: var(--space-xs);
+    }
+  }
+
+  /* Small Mobile Devices */
+  @media (max-width: 480px) {
+
+    /* Content Section Small Mobile Styles */
+    .section {
+      padding: var(--space-sm) 0;
+      gap: var(--space-sm);
+    }
+
+    .content-section {
+      padding: var(--space-md) var(--space-sm);
+    }
+
+    .content-section h1 {
+      font-size: var(--text-lg);
+      margin-bottom: var(--space-md);
+    }
+
+    .content-section p {
+      font-size: var(--text-sm);
+      margin-bottom: var(--space-md);
+    }
+
+    .content-section li {
+      height: 3.5rem;
+      max-width: 20rem;
+    }
+
+    .content-section li a {
+      font-size: var(--text-xs);
+      padding: var(--space-xs);
+    }
+
+    .preview-section {
+      padding: 0;
+    }
+  }
+}
