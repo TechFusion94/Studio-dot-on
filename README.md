@@ -3,6 +3,7 @@
 A responsive, multi-page website for **Studio dot•on**, a fictional Zurich-based design studio that turns complex energy data into clear, usable interfaces. Built from scratch with semantic HTML and pure CSS. No JavaScript, no frameworks, no build tools.
 
 ![Studio dot•on homepage](images/screenshots/screenshot-home.png)
+
 ![Studio dot•on solutions page](images/screenshots/screenshot-solutions.png)
 
 ## Overview
@@ -20,6 +21,7 @@ The focus of the project was building a complete website from concept to code: d
 - **Dashboard showcase** on the Solutions page, presenting the Smart Energy Dashboard UI alongside its three core features
 - **Accessible markup**: semantic landmarks, descriptive alt texts, labelled form fields and ARIA labels on icon-only links
 - **Optimised assets**: WebP images and self-hosted variable fonts, keeping the whole site under 1 MB
+
 
 ![Studio dot•on on mobile](images/screenshots/screenshot-mobile.png)
 
